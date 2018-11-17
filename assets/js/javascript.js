@@ -51,9 +51,6 @@ database.ref().orderByChild("dateAdded").limitToLast(3).on("child_added", functi
   startTime = childSnapshot.val().startTime;
   frequency = childSnapshot.val().frequency;
 
-
-  console.log(childSnapshot.val());
-  
   var timeArrival = startTime.split(":");
   var trainTime = moment().hours(timeArrival[0]).minutes(timeArrival[1]);
   var maxMoment = moment.max(moment(), trainTime);
@@ -70,10 +67,6 @@ database.ref().orderByChild("dateAdded").limitToLast(3).on("child_added", functi
     tMinutes = frequency - tRemainder;
     tArrivals = moment().add(tMinutes, "m").format("hh:mm A");
   }
-
-  console.log(tMinutes);
-  console.log(tArrivals);
-
 
 
   let newRow = $("<tr>");
