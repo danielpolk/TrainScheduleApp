@@ -1,0 +1,23 @@
+#main-display{
+        color:white;
+        background-color:#650b0b !important;
+      }
+
+body{
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+}
+.card{
+    opacity:0.9;
+}
+
+
+.card-header {
+    background: #650b0b;
+    color: white;
+}
+
+button#submit-form {
+    background-color: #650b0b;
+    border: 1px solid #650b0b;
+}
