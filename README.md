@@ -1,5 +1,5 @@
 # Train Schedule App
-This is essentially a tracking tool that receives user input on train start times and calculates the next arriving train based on the current time. 
+This is a tracking tool that receives user input on train start times and calculates the next arriving train based on the current time. 
 
 ![](traintime.gif)
 
